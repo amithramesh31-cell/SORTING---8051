@@ -7,7 +7,7 @@ To write and execute Assembly language Program for sorting of data using 8051 ke
 
 **APPARATUS REQUIRED: Personal computer with Keil software**
 
-**(i) Descending order ALGORITHM:**
+## (i) Descending order ALGORITHM:
 
 1.	Initialize the register r7 with count.
 2.	Get first two elements in two registers.
@@ -18,7 +18,7 @@ To write and execute Assembly language Program for sorting of data using 8051 ke
 7.	Otherwise stop the program.
 
 **PROGRAM:**
-
+```
 ORG 0000H 
 
 MOV R7,#4
@@ -50,23 +50,19 @@ DOWN:DJNZ R6,LOOP
 DJNZ R7,LOOP1
 
 END
-
+```
 
 **OUTPUT:**
 
 **MEMORY WINDOW:**
 
-Before execution: D:0x40H:
-<BR>
-<BR>
-<BR>
 After execution: D:0x40H:
-<BR>
-<BR>
-<BR>
+
+<img width="1919" height="1022" alt="Screenshot 2025-10-03 092401" src="https://github.com/user-attachments/assets/3f4b6af3-ba40-435a-af37-7b5cde98dc78" />
 
 
-**(ii)	Ascending order**
+
+## (ii)	Ascending order
  
 **ALGORITHM:**
 
@@ -79,7 +75,7 @@ After execution: D:0x40H:
 7.	Otherwise stop the program.
 
 **PROGRAM:**
-
+```
 ORG 0000H 
 
 MOV R7,#4
@@ -111,22 +107,15 @@ DOWN:DJNZ R6,LOOP
 DJNZ R7,LOOP1
 
 END
-
+```
 **OUTPUT:**
 
 **MEMORY WINDOW:** 
-
-**Before execution:**
-D:0x40H:
-<BR>
-<BR>
-<BR>
-<BR>
 After execution:
 D:0x40H:
-<BR>
-<BR>
-<BR>
+
+<img width="1919" height="1030" alt="Screenshot 2025-10-03 093227" src="https://github.com/user-attachments/assets/edcd30f5-a625-4d7d-bd5d-712d11fd415f" />
+
 **Result:**
 
 Thus the sorting of given data was done using 8051 keil and shown the output.
